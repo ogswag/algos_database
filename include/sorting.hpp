@@ -10,18 +10,17 @@ namespace bubble_sort
     template <typename T>
     std::vector<T> bubbleSort(std::vector<T> &array)
     {
-        // swap_check flag to terminate the function early
-        // if there is no swap occurs in one iteration.
-        bool swap_check = true;
+        // swap flag to terminate the function if there no swap occurs in an iteration.
+        bool swapped = true;
         int size = array.size();
         for (int i = 0; (i < size) && (swap_check); ++i)
         {
-            swap_check = false;
+            swapped = false;
             for (int j = 0; j < size - 1 - i; ++j)
             {
                 if (array[j] > array[j + 1])
                 {
-                    swap_check = true;
+                    swapped = true;
                     std::swap(array[j], array[j + 1]);
                 }
             }

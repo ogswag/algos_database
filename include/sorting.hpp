@@ -10,7 +10,7 @@ namespace bubble_sort
     template <typename T>
     std::vector<T> bubbleSort(std::vector<T> &array)
     {
-        // swap flag to terminate the function if there no swap occurs in an iteration.
+        // swap flag to terminate the function if 0 swaps were made in an iteration.
         bool swapped = true;
         int size = array.size();
         for (int i = 0; (i < size) && (swap_check); ++i)

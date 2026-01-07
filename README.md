@@ -1,3 +1,3 @@
-# Algorithms database
+# Algorithms and Data Structures database
 
-Just a database of algorithms and data structures I saved just in case
+A database of algorithms and data structures I have written/saved.
